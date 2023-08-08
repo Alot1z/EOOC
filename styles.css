@@ -1,6 +1,38 @@
-/* Avancerede stilarter og effekter */
+/* Avanceret stil for elementerne */
 body {
+  background-color: #111;
   color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("istockphoto-1180630681-612x612.jpg"); /* Referer til billedet her */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 nav ul li a:before {
@@ -21,7 +53,14 @@ nav ul li a:hover:before {
   transform-origin: left;
 }
 
-/* Hightech knap-effekt */
+.hightech-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00bfff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -30,6 +69,7 @@ nav ul li a:hover:before {
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  margin-top: 20px;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -37,57 +77,44 @@ nav ul li a:hover:before {
   background-color: #0055a0;
 }
 
-/* Tekst med hightech effekt */
-.hightech-text {
+.split-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  border-bottom: 1px solid #444;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+}
+
+.section-title {
   font-size: 2rem;
-  background: linear-gradient(135deg, #00bfff 0%, rgba(0, 0, 0, 0.8) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: #00bfff;
 }
 
-/* Avanceret hightech design */
-.hero:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(0, 191, 255, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
-  z-index: -1;
+.section-description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ccc;
 }
 
-/* Avancerede geometriske effekter */
-header:after {
-  content: "";
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #00bfff 0%, rgba(0, 0, 0, 0.8) 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
-  z-index: -1;
-}
-
-/* Avanceret hover-effekt */
-nav ul li a {
-  position: relative;
-  overflow: hidden;
-}
-
-nav ul li a span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
+.section-button {
+  display: inline-block;
+  padding: 8px 15px;
   background-color: #00bfff;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease-in-out;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-nav ul li a:hover span {
-  transform: scaleX(1);
+.section-button:hover {
+  background-color: #0055a0;
 }
+
+/* Resten af din CSS-stil ... */
