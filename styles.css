@@ -1,14 +1,47 @@
-/* Primær stil for elementerne */
+/* Generelle stilarter */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+/* Header og navigationslinje */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
-/* ... dine grundlæggende CSS-regler ... */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Forsidesektion */
+.hero {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
