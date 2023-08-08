@@ -2,20 +2,25 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Header og navigationslinje */
 header {
-  background-color: #333;
+  background-color: #1a1a1a;
   color: #fff;
   padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -25,6 +30,13 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Aktiv navigationslink */
+nav ul li a.active {
+  color: #00bfff;
 }
 
 /* Forsidesektion */
@@ -45,3 +57,43 @@ nav ul li a {
 .hero p {
   font-size: 1.2rem;
 }
+
+/* Hightech look */
+body {
+  background-color: #000;
+}
+
+nav ul li a {
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #00bfff;
+}
+
+.hero {
+  border-top: 10px solid #00bfff;
+}
+
+/* Geometrisk skelet-look */
+header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+}
+
+/* Medieforespørgsler */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+}
+
