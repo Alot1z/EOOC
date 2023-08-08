@@ -1,14 +1,14 @@
-/* Avanceret stil for elementerne */
 body {
-  background-color: #111;
-  color: #fff;
+  background-color: #0b3d91;
+  background-image: linear-gradient(315deg, #0b3d91 0%, #acbbea 74%);
+  color: #00ff00;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-image: url("istockphoto-1180630681-612x612.jpg"); /* Referer til billedet her */
+  background-image: url("cyberpunk-background.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -33,6 +33,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
   letter-spacing: 1px;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
 }
 
 nav ul li a:before {
@@ -56,15 +57,15 @@ nav ul li a:hover:before {
 .hightech-text {
   font-size: 3rem;
   font-weight: bold;
-  color: #00bfff;
+  color: #ff00ff;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
 }
 
-.button {
+.button, .section-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #00bfff;
+  background-color: #ff00ff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -73,7 +74,7 @@ nav ul li a:hover:before {
   transition: background-color 0.3s ease-in-out;
 }
 
-.button:hover {
+.button:hover, .section-button:hover {
   background-color: #0055a0;
 }
 
@@ -100,21 +101,3 @@ nav ul li a:hover:before {
   margin-top: 10px;
   color: #ccc;
 }
-
-.section-button {
-  display: inline-block;
-  padding: 8px 15px;
-  background-color: #00bfff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  text-decoration: none;
-  margin-top: 20px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.section-button:hover {
-  background-color: #0055a0;
-}
-
-/* Resten af din CSS-stil ... */
